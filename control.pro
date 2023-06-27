@@ -26,14 +26,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    websocketclient_control.cpp
+    websocketclient_control.cpp \
+    connect.cpp
 
 HEADERS += \
         mainwindow.h \
     websocketclient_control.h \
-    rest.h
+    rest.h \
+    connect.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    connect.ui
 
 QT += websockets

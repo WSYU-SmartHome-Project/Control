@@ -20,7 +20,7 @@ void WebSocketClient_Control::createWebsocketClient(QString ip,QString port,QStr
     connect(socketCLient,&QWebSocket::disconnected,this,&WebSocketClient_Control::onDisConnected);
     connect(socketCLient,&QWebSocket::textMessageReceived,this,&WebSocketClient_Control::onTextReceived);
     connect(socketCLient,&QWebSocket::connected,this,&WebSocketClient_Control::onConnected);
-    socketCLient->open(QUrl("ws://localhost:8080/control"));
+    socketCLient->open(QUrl("ws://"+ip+":"+port+"/control"));
 
     MainWindow::led_on = 0;
 }

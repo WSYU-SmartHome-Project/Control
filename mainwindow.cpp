@@ -9,10 +9,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    WebSocketClient_Control* client = new WebSocketClient_Control();
-    client->createWebsocketClient("","","");
-    client->setMainPage(this);
-
 }
 
 int MainWindow::led_on = 0;
