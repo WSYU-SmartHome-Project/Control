@@ -66,27 +66,27 @@ void WebSocketClient_Control::onTextReceived(QString msg){
 
     if(rest->command == 521){
         MainWindow::kongtiao_on = 1;
-        mainPage->ac_changed(rest->message);
+        mainPage->ac_changed("  "+rest->message);
     }
 
     if(rest->command == 522){
         MainWindow::kongtiao_on = 0;
-        mainPage->ac_changed(rest->message);
+        mainPage->ac_changed("  "+rest->message);
     }
 
     if(rest->command == 101 ||rest->command == 102 ){
         //温度增加
-        mainPage->tp_change(rest->message);
+        mainPage->tp_change("   "+rest->message);
         qDebug()<<msg;
     }
 
     if(rest->command == 666){
         MainWindow::fengming_on = 1;
-        mainPage->bee_changed(rest->message);
+        mainPage->bee_changed("  "+rest->message);
     }
     if(rest->command == 667){
         MainWindow::fengming_on = 0;
-        mainPage->bee_changed(rest->message);
+        mainPage->bee_changed("  "+rest->message);
     }
 
 

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/control.jpg</file>
+        <file>image/down.png</file>
+        <file>image/fengming.png</file>
+        <file>image/kongtiao.png</file>
+        <file>image/ktxs.png</file>
+        <file>image/light.png</file>
+        <file>image/lighttab.png</file>
+        <file>image/TV.png</file>
+        <file>image/up.png</file>
+        <file>image/shuru.png</file>
+        <file>image/login.png</file>
+    </qresource>
+</RCC>

@@ -40,3 +40,6 @@ FORMS += \
     connect.ui
 
 QT += websockets
+
+RESOURCES += \
+    resources.qrc

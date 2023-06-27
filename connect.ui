@@ -72,6 +72,25 @@
     <string>PORT</string>
    </property>
   </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-1</y>
+     <width>400</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/image/login.png)</string>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>ip</zorder>
+  <zorder>port</zorder>
+  <zorder>btn</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
  </widget>
  <resources/>
  <connections/>
