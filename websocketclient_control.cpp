@@ -89,6 +89,10 @@ void WebSocketClient_Control::onTextReceived(QString msg){
         mainPage->bee_changed("  "+rest->message);
     }
 
+    if(rest->command == 400){
+        QMessageBox::warning(mainPage,"错误:\n",rest->message);
+    }
+
 
 }
 
